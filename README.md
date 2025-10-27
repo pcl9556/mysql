@@ -183,8 +183,8 @@ MINUS: 차집합
 | `TIMESTAMP`   | `2025-10-21 14:30:00`     | `DATETIME`과 유사, UTC기준 | 4 byte |
 | `YEAR`        | `2025`                    | 연도만                   | 1 byte |
 
-ON DELETE SET NULL - 부모(category)의 행이 삭제될 때
-자식(popup_store)의 외래키(category_no)를 NULL로 바꿔준다.
+ON DELETE SET NULL - 부모의 행이 삭제될 때
+자식의 외래키를 NULL로 바꿔준다.
 
-ON UPDATE CASCADE - 부모의 기본키(category_no)가 수정되면,
-자식 테이블의 외래키(category_no)도 같이 변경된다.
+ON UPDATE CASCADE - 부모의 기본키가 수정되면,
+자식 테이블의 외래키도 같이 변경된다.
