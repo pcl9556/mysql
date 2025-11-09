@@ -188,3 +188,8 @@ ON DELETE SET NULL - 부모의 행이 삭제될 때
 
 ON UPDATE CASCADE - 부모의 기본키가 수정되면,
 자식 테이블의 외래키도 같이 변경된다.
+
+<h4> INDEX </h4>
+인덱스(index) 는 테이블의 특정 컬럼(열)에 대해 데이터의 위치를 미리 정리해둔 자료구조.
+검색 시 모든 행을 다 뒤지는 Full Table Scan을 피하고, 빠르게 특정 데이터로 접근하게 도와줌.
+- WHERE, ORDER BY, GROUP BY 조건이 있는 쿼리에 특히 유리
